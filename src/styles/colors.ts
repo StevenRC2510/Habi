@@ -1,0 +1,17 @@
+export const colors = {
+  white: '#FFFF',
+  black: '#000000',
+  blue_main: '#003763',
+  gray_1: '#FAFAFA',
+  gray_2: '#F2F3F4',
+  gray_3: '#E4E4E4',
+  gray_4: '#BDC3C7',
+  gray_5: '#E6E6E6',
+  green_success: '#00a950',
+  orange_1: '#F39C12',
+  red_1: '#E74C3C',
+  yellow_warning: '#FFC230',
+  red_danger: '#dd3f5b',
+  purple: '#7b04fa',
+  red_orange: '#f45d60',
+};
