@@ -23,7 +23,13 @@ export const ApartmentList = ({ owner, apartments, _id: livingPlaceId }: LivingP
         const bothFilters = apartment.location.toLowerCase().includes(location.toLowerCase()) && apartment.date.includes(date);
         const locationFilter = apartment.location.toLowerCase().includes(location.toLowerCase());
         const dateFilter = apartment.date.includes(date);
-        return bothFilters || locationFilter || dateFilter;
+        if (location && date) {
+          return bothFilters;
+        }
+        if (location) {
+          return locationFilter;
+        }
+        return dateFilter;
       }),
     [location, date, apartments],
   );

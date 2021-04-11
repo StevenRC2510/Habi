@@ -15,7 +15,7 @@ export const routes: Array<RoutesCustom> = [
   },
   {
     exact: true,
-    path: HABI_ROUTES.homePage,
+    path: HABI_ROUTES.homeList,
     component: Home,
   },
   {

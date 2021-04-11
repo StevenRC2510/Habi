@@ -4,10 +4,10 @@ export const ORDER = 'asc';
 export const HABI_ROUTES = {
   // home: `/?page=${}&limit${}`,
   home: '/',
-  homePage: '/:page',
+  homeList: '/list/:page',
   apartmentDetail: '/apartment/:id',
   addApartment: '/add-apartment',
-  notFound: '*',
+  notFound: '/*',
 };
 
 export const ADD_APARTMENT_FIELDS_ERROR_MESSAGES = {

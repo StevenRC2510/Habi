@@ -72,7 +72,7 @@ export const convertOwnerArrayToObject = (array: LivingPlace[]) => {
 
 export const generateDataWithUuid = (array: any[]) => {
   return array.map(data => {
-    const dataWithUuId = { ...data, _id: uuidv4(), date: new Date() };
+    const dataWithUuId = { ...data, _id: uuidv4(), date: '2021-04-10' };
     return dataWithUuId;
   });
 };

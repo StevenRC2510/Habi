@@ -22,7 +22,7 @@ export const PaginationComponent = ({ itemsPerPage, totalItems, paginate }: Prop
       <ul className='pagination'>
         {map(pageNumbers, (number, key) => (
           <PageItemStyled key={key} isActive={page === number.toString()}>
-            <LinkStyled to={`/${number}`} onClick={() => paginate(number)} className='page-link'>
+            <LinkStyled to={`/list/${number}`} onClick={() => paginate(number)} className='page-link'>
               {number}
             </LinkStyled>
           </PageItemStyled>
